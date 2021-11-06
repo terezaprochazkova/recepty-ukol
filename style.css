@@ -1,0 +1,224 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+
+/* -------------------------------------------------- */
+
+/*
+pouzivame mobile first pristup
+tj. vychozi styly mimo media query jsou pro nejmensi mobilni zarizeni
+s pribyvajici sirkou pridavame media query pro
+středně široké obrazovky:
+@media (min-width: 480px) {
+}
+široké obrazovky
+@media (min-width: 860px) {
+}
+*/
+
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.paticka {
+    text-align: center;
+    font-size: 14px;
+    color: silver;
+}
+
+.paticka a {
+    color: silver;
+}
+
+
+/* ------------------------------- */
+/* ----- DOLE BUDE TVOJE CSS ----- */
+/* ------------------------------- */
+
+.recepty {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+   h1 {
+        font-weight: 800;
+        font-size: 1.75rem;
+        color: white;
+        text-align: end;    
+        padding: 0.5rem;
+        position: absolute;
+    }
+
+    .popisek{
+        font-weight: 400;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        color: white;
+    }
+
+    .kometare {
+        font-weight: 400;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        color: white;
+    }
+
+    h2 {
+        font-weight:800;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        color: white;
+    }
+
+
+
+
+
+    
+    .box1 {
+     
+        min-height: 200px;
+        display: flex;
+        background-image: url(../vege/images/salat.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .box2 {
+
+        display: flex;
+        min-height: 90px;
+        background-image: url(../vege/images/chlebicek.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box3 {
+        
+        min-height:90px ;
+        display: flex;
+        background-image: url(../vege/images/cizrna.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box4 {
+        
+        min-height:90px ;
+        display: flex;
+        background-image: url(../vege/images/tacos.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box5 {
+        
+        min-height:90px ;
+        display: flex;
+        background-image: url(../vege/images/burger.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+    @media screen and (min-width: 480px) {
+        h1 {
+            font-size: 2rem;
+            padding: 1.5rem;
+        }
+    
+        h2 {
+            font-size: 1.5rem;
+            padding: 1.5rem;
+        }
+
+        .popisek {
+            padding: 1.5rem ;
+        }
+
+        .komentare {
+            padding: 1.5rem;
+        }
+
+        .box1{
+            min-height: 250px;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .box2{
+            min-height: 400px;
+            
+        }
+
+        .box3{
+            min-height: 200px;
+          
+        }
+
+        .box4{
+            min-height: 200px;
+            
+            
+        }
+
+        .box5{
+            min-height: 200px;
+            
+        }
+
+        .recepty{
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+
+    }
+
+    @media screen and (min-width: 860px) {
+        h1 {
+            font-size: 3rem;
+        }
+    
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        .box1{
+            min-height: 250px;
+        }
+
+        .box2{
+            min-height: 150px;
+        }
+
+        .box3{
+            min-height: 150px;
+        }
+
+        .box4{
+            min-height: 150px;
+        }
+
+        .box5{
+            min-height: 150px;
+        }
+
+        .recepty{
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        
+    }
+
+   /* OMLUVÁM SE, ALE NEVÍM JAK DÁL */ 
